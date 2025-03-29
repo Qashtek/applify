@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applify 1.0</title>
+   <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+</head>
+<body>
+
+    <h1>Job Applications</h1>
+    <table id="jobhunt" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>COMPANY</th>
+                <th>ROLE</th>
+                <th>DATE APPLIED</th>
+            </tr>
+        </thead>
+       
+    </table>
+
+
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+    
+    <script>
+        new DataTable('#jobhunt', {
+        ajax: 'https://script.google.com/macros/s/AKfycbxvp59pfZLuK-Q9VH9QV5ObxT_an-n3HWkCTV5cGYgSAkmUHqnALWYH5p7mahX5ZLDb/exec',
+        columns: [
+                { data: 'SN' },
+                { data: 'COMPANY' },
+                { data: 'ROLE' },
+                { data: 'DATE APPLIED' }
+            ]
+        });
+    </script>
+</body>
+</html>
