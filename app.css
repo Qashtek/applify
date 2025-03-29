@@ -57,3 +57,11 @@ section{
 }
 
 
+@media  (max-width: 900px){
+    section{
+        padding: 120px 10px
+    }
+    table{
+        font-size: 0.8rem;
+    }
+}
