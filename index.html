@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applify 1.0</title>
+    <title>Penup 5 | Applify 1.0</title>
    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css">
+   <link rel="stylesheet" href="app.css">
 </head>
 <body>
 
-    <h1>Job Applications</h1>
-    <table id="jobhunt" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th>SN</th>
-                <th>COMPANY</th>
-                <th>ROLE</th>
-                <th>DATE APPLIED</th>
-            </tr>
-        </thead>
-       
-    </table>
+    <main>
 
+        <header>
+            <a href="/">PenstarsClub</a>
 
-    
+            <small>beyond writing...</small>
+        </header>
+
+        <section>
+            <h1>Penup season 5 is <span class="live">LIVE</span> </h1>
+            <p>Ensure to check this page regularly for updates as recent information are displayed here</p>
+        
+  
+            <table id="jobhunt" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Pen Name</th>
+                        <th>Contestant ID</th>
+                    </tr>
+                </thead>
+            
+            </table>
+        </section>
+        
+    </main>
 
 
 
@@ -32,12 +45,12 @@
     
     <script>
         new DataTable('#jobhunt', {
-        ajax: 'https://script.google.com/macros/s/AKfycbxvp59pfZLuK-Q9VH9QV5ObxT_an-n3HWkCTV5cGYgSAkmUHqnALWYH5p7mahX5ZLDb/exec',
+        ajax: 'https://script.google.com/macros/s/AKfycbxiQINBe-pU6DcJ_La9aGiRz-sTioP9LkQCA-1fsz7BhImfICsj5CdBZfGojCcPYNUx/exec',
         columns: [
-                { data: 'SN' },
-                { data: 'COMPANY' },
-                { data: 'ROLE' },
-                { data: 'DATE APPLIED' }
+                { data: 'First Name' },
+                { data: 'Last Name' },
+                { data: 'Pen Name' },
+                { data: 'Contestant ID' }
             ]
         });
     </script>
