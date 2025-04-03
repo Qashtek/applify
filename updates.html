@@ -19,7 +19,7 @@
             
 
             <nav>
-                <a href="/updates.html">view updates</a>
+                <a href="/index.html">Home</a>
             </nav>
 
             
@@ -27,20 +27,15 @@
 
         <section>
             <h1>Penup season 5 is <span class="live">LIVE</span> </h1>
-            <p>Ensure to check this page regularly for updates as recent information are displayed here</p>
+            <p>Adhere to these instructions to have the best experience of  the contest</p>
         
   
-            <table id="penup5" class="display" style="width:100%">
-                <thead>
-                    <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Pen Name</th>
-                        <th>Contestant ID</th>
-                    </tr>
-                </thead>
-            
-            </table>
+            <article id='info'>
+                <div id="article-header">
+                    <h2>Guidelines for PenUp Season 5</h2>
+                    
+                </div>
+            </article>
         </section>
         
     </main>
@@ -52,15 +47,7 @@
     <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
     
     <script>
-        new DataTable('#penup5', {
-        ajax: 'https://script.google.com/macros/s/AKfycbxiQINBe-pU6DcJ_La9aGiRz-sTioP9LkQCA-1fsz7BhImfICsj5CdBZfGojCcPYNUx/exec',
-        columns: [
-                { data: 'First Name' },
-                { data: 'Last Name' },
-                { data: 'Pen Name' },
-                { data: 'Contestant ID' }
-            ]
-        });
+        
     </script>
 </body>
 </html>

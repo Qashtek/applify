@@ -31,6 +31,24 @@ header a {
     text-decoration: none;
 }
 
+nav a {
+    color:rgba(255, 255, 255, 0.527);
+    font-weight: normal;
+    text-shadow: 4px 4px 8px rgba(87, 83, 83, 0.5);
+    font-size: 0.8rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    padding: 10px 12px;
+    border-radius: 9px;
+    transition: color .2s ease-in;
+    text-transform: capitalize;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    border: .5px solid rgba(245, 222, 179, 0.397)
+}
+
 section{
     padding: 120px 50px;
 }
@@ -57,6 +75,43 @@ section{
 }
 
 
+
+
+
+
+/* updates page */
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+
+#info {
+    margin-top: 20px;
+}
+#article-header {
+    background-image: url('assets/images/white-book.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+    width: 100%;
+    height: 500px;
+    padding: 100px;
+    border-radius: 40px;
+}
+
+#article-header h2{
+    font-size: 4rem;
+    background-color:rgb(32, 18, 51);
+    color: wheat;
+    text-align: center;
+    border-radius: inherit;
+}
+
+
 @media  (max-width: 900px){
     section{
         padding: 120px 10px
@@ -64,4 +119,20 @@ section{
     table{
         font-size: 0.8rem;
     }
+
+
+
+    /* updates page */
+    #article-header{
+        padding: 20px;
+    }
+    #article-header h2{
+        font-size: 2rem;
+        background-color:rgb(32, 18, 51);
+        color: wheat;
+        text-align: center;
+        padding: 10px;
+        
+    }
+    
 }
