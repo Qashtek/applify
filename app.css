@@ -53,6 +53,10 @@ section{
     padding: 120px 50px;
 }
 
+section h1{
+    padding: 14px 0;
+}
+
 .live{
     color:rgb(245, 245, 245);
     padding: 2px 5px;
@@ -81,10 +85,6 @@ section{
 
 /* updates page */
 
-figure img{
-    width: 100%;
-    height: auto;
-}
 
 
 #info {
