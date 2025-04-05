@@ -49,11 +49,11 @@ nav a:hover {
     border: .5px solid rgba(245, 222, 179, 0.397)
 }
 
-section{
+section#table-section{
     padding: 120px 50px;
 }
 
-section h1{
+section#table-section h1{
     padding: 14px 0;
 }
 
@@ -85,12 +85,16 @@ section h1{
 
 /* updates page */
 
-
+#info-section{
+    padding: 100px ;
+    margin-top: 50px;
+}
 
 #info {
     margin-top: 20px;
 }
 #article-header {
+    background-color: rgba(245, 222, 179, 0.397);
     background-image: url('assets/images/white-book.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -98,7 +102,7 @@ section h1{
     background-size: cover;
 
     width: 100%;
-    height: 500px;
+    /* height: 500px; */
     padding: 100px;
     border-radius: 40px;
 }
@@ -111,15 +115,43 @@ section h1{
     border-radius: inherit;
 }
 
+.subHeading{
+    font-size: 1.5rem;
+    color: rgb(32, 18, 51);
+    text-align: left;
+    margin: 20px 0;
+    background-color: rgba(245, 222, 179, 0.397);
+    padding: 10px 20px;
+}
+
+.hashtags{
+    font-size: 1.2rem;
+    color: rgb(32, 18, 51);
+    text-align: left;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+li{
+    margin-left: 50px;
+    padding: 10px 0;
+    font-size: 1.2rem;
+}
+
 
 @media  (max-width: 900px){
-    section{
+    section#table-section{
         padding: 120px 10px
     }
     table{
         font-size: 0.8rem;
     }
 
+    #info-section{
+        padding: 50px 20px;
+        margin-top: 100px;
+    }
 
 
     /* updates page */
@@ -136,3 +168,4 @@ section h1{
     }
     
 }
+
